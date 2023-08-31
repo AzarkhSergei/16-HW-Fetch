@@ -15,7 +15,7 @@ convert.onclick = function () {
     .then((res) => {
       const div1 = document.getElementById("div1");
       const h3 = document.createElement("h3");
-      h3.append(document.createTextNode(`Rate: ${res.info.rate} Result: ${res.result} ${to}`));
+      h3.append(document.createTextNode(`Exchange Rates: ${res.info.rate} Result: ${res.result} ${to}`));
       if (div1.firstChild) {
         div1.replaceChild(h3, div1.firstChild);
       } else {
