@@ -4,7 +4,6 @@ convert.onclick = function () {
   const amount = document.getElementById("amount").value;
   const from = document.getElementById("select1").value;
   const to = document.getElementById("select2").value;
-  console.log(`${amount} ${from} ${to}`);
   fetch(`https://api.apilayer.com/fixer/convert?to=${to}&from=${from}&amount=${amount}`,
     {
       headers: {
