@@ -21,5 +21,6 @@ convert.onclick = function () {
       } else {
         div1.appendChild(h3);
       }
-    });
+    })
+    .catch(e => console.log("Error:", e))
 };
