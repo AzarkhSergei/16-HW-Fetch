@@ -8,14 +8,14 @@ fetch(`https://api.apilayer.com/fixer/symbols`, {
   .then((response) => response.json())
   .then((res) => {
     for (const key in res.symbols) {
-      const option1 = document.createElement("option");
-      option1.value = key;
-      option1.textContent = key;
-      const option2 = document.createElement("option");
-      option2.value = key;
-      option2.textContent = key;
-      select1.append(option1);
-      select2.append(option2);
+      // const option1 = document.createElement("option");
+      // option1.value = key;
+      // option1.textContent = key;
+      // const option2 = document.createElement("option");
+      // option2.value = key;
+      // option2.textContent = key;
+      select1.append(new Option(key, key));
+      select2.append(new Option(key, key));
     }
     select1.value = 'ILS';
     select2.value = 'USD';
